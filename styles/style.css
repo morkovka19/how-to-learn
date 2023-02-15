@@ -7,18 +7,41 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  border: 2px solid red;
 }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  display: flex;
   /* выше установили ограничения для секции */
 }
 
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex{
+  display: flex;
+  border: 2px solid red;
+}
+
+
+
 .logo{
-  background-image: url(.\images\logo_place_header.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo_position_absolute{
+  position: absolute;
 }
 
 .logo_place_header{
@@ -26,13 +49,72 @@
   margin-left: 64px;
   width: 228px;
   height: 32px;
-  position: absolute;
   z-index: 1;
+  border: 2px solid red;
+  background-image: url(../images/logo_place_header.svg);
+
+}
+
+.header__title{
+  width: 730px;
+  font-weight: 600;
+  font-size: 102px;
+  line-height: 96px;
+  border: 2px solid red;
+  margin-left: 64px;
+  justify-self: center;
+
+
+}
+
+.header__subtitle{
+  margin-left: 64px;
+  margin-bottom: 30px;
+  line-height: 25px;
+
+  border: 2px solid red;
+}
+
+.header__subtitle_font_styles{
+  font-size: 18px;
+  font-style: normal;
+  width: 388px;
+
+}
+
+.header__link{
+color:  #2f80ed;
+text-decoration: none;
+}
+
+.header__main-illustration{
+  border: 2px solid red;
+  justify-self: flex-start;
+  align-items: flex-end;
+  position: absolute;
+}
+.header__main-illustration{
+  border: 2px solid red;
+  background-image: url(..\images\header-image.png);
+  z-index: 1;
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  margin-bottom: 0;
+  margin-right: 0;
+
 }
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color:  #2f80ed;
+  margin-top: 64px;
+  margin-right: 0;
+  position: absolute;
+  z-index: 0;
+
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
