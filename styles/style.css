@@ -14,24 +14,23 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  position: relative;
+  display: flex;
+
   /* выше установили ограничения для секции */
 }
-
-.flex-column{
+ .flex-column{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
+  border: 2px solid red;
+  justify-content: center;
+ }
 
-.flex-row{
+ .flex-row{
   display: flex;
   flex-direction: row;
-}
+ }
 
-.flex{
-  display: flex;
-  border: 2px solid red;
-}
 
 
 
@@ -45,8 +44,8 @@
 }
 
 .logo_place_header{
-  margin-top: 30px;
-  margin-left: 64px;
+  top: 30px;
+  left: 64px;
   width: 228px;
   height: 32px;
   z-index: 1;
@@ -63,16 +62,16 @@
   border: 2px solid red;
   margin-left: 64px;
   justify-self: center;
-
-
+  z-index: 2;
 }
 
 .header__subtitle{
-  margin-left: 64px;
-  margin-bottom: 30px;
+  left: 64px;
+  bottom: 30px;
   line-height: 25px;
-
+  position: absolute;
   border: 2px solid red;
+  width: 388px;
 }
 
 .header__subtitle_font_styles{
@@ -89,32 +88,80 @@ text-decoration: none;
 
 .header__main-illustration{
   border: 2px solid red;
-  justify-self: flex-start;
-  align-items: flex-end;
-  position: absolute;
-}
-.header__main-illustration{
-  border: 2px solid red;
-  background-image: url(..\images\header-image.png);
-  z-index: 1;
   position: absolute;
   width: 765px;
   height: 608px;
-  margin-bottom: 0;
-  margin-right: 0;
-
+  bottom: 0;
+  right: 0;
+  z-index: 1;
 }
+
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
   background-color:  #2f80ed;
-  margin-top: 64px;
-  margin-right: 0;
   position: absolute;
-  z-index: 0;
+  top: 64px;
+  right: 0;
+}
+
+.description{
+  margin-top: 100px;
+  border: 5px solid black;
+  justify-content: center;
+  width: 80%;
+  min-width: 784px;
+  margin: 100px auto;
+  justify-content: space-between;
+
+}
 
 
+
+
+.two-columns_brief{
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-style: normal;
+  border: 2px solid red;
+  width: 175px;
+
+}
+
+.two-columns_main_text{
+  justify-content: space-between;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns_paragraph{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  border: 2px solid red;
+}
+
+.two-columns_paragraph_span_accent{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.two-columns_paragraph_margin{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+.section-title{
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
 }
 
 /* и элемента с модификатором вида ключ-значение */
