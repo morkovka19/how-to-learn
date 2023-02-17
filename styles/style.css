@@ -101,6 +101,7 @@
 .description {
   margin: auto;
   padding-top: 100px;
+  display: flex;
 }
 
 .two-columns {
@@ -160,6 +161,7 @@
 .digits {
   padding-top: 100px;
   padding-bottom: 100px;
+
 
 
 }
@@ -238,6 +240,7 @@
   background-color: #f2f2f2;
   z-index: -2;
 
+
 }
 
 .feynman__image {
@@ -293,6 +296,7 @@
   position: relative;
   z-index: -1;
   overflow: hidden;
+  
 
 }
 
