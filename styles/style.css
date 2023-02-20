@@ -363,7 +363,7 @@
   top: 0;
   right: -210px;
   z-index: -1;
-  background-size: 95%;
+  background-size: cover;
   background-image: url(../images/kaufman-triangle.svg);
 }
 
@@ -393,7 +393,7 @@
 }
 
 
-.footer__content_copyright {
+.footer__column_content_copyright {
   margin: 0;
   padding: 0;
   display: flex;
@@ -403,7 +403,7 @@
   width: 50%;
 }
 
-.footer__content_info {
+.footer__column_content_info {
   margin: 0;
   padding: 0;
   display: flex;
@@ -411,7 +411,7 @@
   justify-content: flex-start;
 }
 
-.footer__content_social {
+.footer__column_content_social {
   margin: 0;
   padding: 0;
   display: flex;
