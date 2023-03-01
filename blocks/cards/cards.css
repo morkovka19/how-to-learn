@@ -1,0 +1,7 @@
+.cards{
+  margin: auto 0;
+  padding: 0;
+  display: grid;
+  width: 920px;
+  grid-template-columns: 1fr 1fr 1fr;
+}

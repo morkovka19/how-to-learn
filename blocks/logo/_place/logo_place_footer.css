@@ -1,0 +1,12 @@
+
+.logo_place_footer {
+  margin: 0;
+  padding: 0;
+  background-image: url(..\images\logo_place_footer.svg);
+  width: 228px;
+  height: 32px;
+  z-index: 1;
+  color: #f2f2f2;
+}
+
+
